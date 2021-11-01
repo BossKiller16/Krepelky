@@ -1,0 +1,26 @@
+.nadpis {
+   text-align: center;
+}
+
+.mapa {
+   position: relative;
+   width: 600px;
+   height: 300px;
+   float: right;
+   bottom: 200px;
+}
+.info {
+   padding-top: 50px;
+}
+@media screen and (max-width: 990px) {
+   .info {
+      padding-left: 20px;
+   }
+   .mapa {
+      position: relative;
+      float: none;
+      margin-top: 320px;
+      width: 300px;
+      height: 200px;
+   }
+}

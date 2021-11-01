@@ -1,0 +1,136 @@
+.vse {
+}
+.logo {
+   width: 250px;
+   padding-bottom: 50px;
+}
+.nadpis {
+   text-align: center;
+}
+.nadpisVlevo {
+   margin-bottom: -70px;
+}
+.flex {
+   display: flex;
+}
+.left {
+   position: relative;
+
+   padding-top: 10px;
+   padding-bottom: 50px;
+   font-size: 20px;
+}
+.right {
+   position: relative;
+   text-align: right;
+   padding-bottom: 80px;
+   font-size: 20px;
+}
+.paragraphLeft {
+   padding-right: 0px;
+   display: flex;
+   align-items: center;
+   max-width: 500px;
+   padding-top: 50px;
+   padding-right: 50px;
+   text-align: justify;
+}
+.paragraphRight {
+   text-align: left;
+   display: flex;
+   align-items: center;
+   padding-right: -50px;
+   order: 2;
+
+   text-align: justify;
+}
+
+.img2 {
+   display: flex;
+   margin-right: 50px;
+   width: 400px;
+   height: 300px;
+   image-rendering: -webkit-optimize-contrast;
+   object-fit: cover;
+   border-radius: 15px 15px 15px 15px;
+}
+
+.img {
+   width: 400px;
+   height: 300px;
+   image-rendering: -webkit-optimize-contrast;
+   object-fit: cover;
+   border-radius: 15px 15px 15px 15px;
+}
+@media screen and (max-width: 980px) {
+   .logo {
+      width: 200px;
+      padding-bottom: 0px;
+   }
+   .nadpisVlevo {
+      margin-bottom: 5px;
+      text-align: center;
+   }
+   .nadpisVpravo {
+      text-align: center;
+   }
+   .flex {
+      display: block;
+      padding-bottom: 45px;
+   }
+   .left {
+      position: relative;
+      left: 0px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      font-size: 17px;
+   }
+   .right {
+      position: relative;
+      text-align: start;
+      right: 0px;
+      padding-bottom: 0px;
+      font-size: 17px;
+   }
+   .paragraphLeft {
+      padding-right: 0px;
+      display: block;
+      align-items: center;
+      padding-top: 0px;
+
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+   }
+   .paragraphRight {
+      text-align: center;
+      display: block;
+      align-items: center;
+      padding-right: 0px;
+      order: 0;
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+   }
+
+   .img2 {
+      position: relative;
+      margin-right: 0px;
+      max-width: 300px;
+      image-rendering: -webkit-optimize-contrast;
+      object-fit: cover;
+      text-align: center;
+      margin: auto;
+      display: block;
+   }
+
+   .img {
+      text-align: center;
+      max-width: 300px;
+      display: block;
+
+      image-rendering: -webkit-optimize-contrast;
+      object-fit: cover;
+      margin: auto;
+   }
+}

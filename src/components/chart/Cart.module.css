@@ -1,0 +1,168 @@
+.DPH {
+   display: block;
+   text-align: right;
+   font-size: 20px;
+}
+
+.btn {
+   padding: 10px;
+   margin: auto;
+   display: block;
+   font-size: 30px;
+   border-radius: 10px;
+   background: greenyellow;
+}
+
+.btn:active {
+   transform: translateY(4px);
+}
+
+.nadpis {
+   text-align: center;
+   font-size: 40px;
+}
+.cell {
+}
+.celek {
+   position: relative;
+   margin: 10px;
+}
+
+.blok {
+   position: flex;
+   width: 600px;
+   height: 100px;
+   background-color: #fbfbfb;
+   border: solid 1px;
+   border-radius: 5px;
+   display: flex;
+   margin: 0 auto;
+   /*    justify-content: center;
+   align-items: center; */
+}
+
+.img {
+   width: 80px;
+   margin: auto;
+   height: 90px;
+   object-fit: scale-down;
+   padding-right: 0px;
+}
+.name {
+   width: 1050px;
+   height: 100px;
+   position: relative;
+   display: flex;
+   margin: auto 0;
+   font-size: 20px;
+   padding-left: 10px;
+}
+
+.buttons {
+   display: flex;
+   margin: auto 30px;
+   padding-left: 70px;
+}
+
+.middle {
+   width: 120px;
+   height: 50px;
+   margin: auto;
+}
+.minus,
+.plus {
+   border: none;
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.quantity {
+   font-size: 25px;
+   padding: 10px;
+   font-size: 25px;
+   width: 80px;
+   text-align: center;
+}
+.total {
+   position: relative;
+   width: 150px;
+   left: -30px;
+   padding-left: 110px;
+   margin: auto;
+}
+.bin {
+   color: black;
+   position: relative;
+   font-size: 20px;
+   text-decoration: none;
+   margin: auto 0px;
+   width: 300px;
+   height: 50px;
+}
+
+.empty {
+   font-size: 40px;
+   text-align: center;
+}
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+@media screen and (max-width: 960px) {
+   .blok {
+      padding-top: 0px;
+      width: 100%;
+      height: 60px;
+      padding: 0px;
+      margin: 0px;
+   }
+   .img {
+      width: 10%;
+      height: 60px;
+      object-fit: scale-down;
+   }
+   .total {
+      position: relative;
+      width: 80px;
+      padding-left: 110px;
+      margin: auto;
+   }
+   .buttons,
+   .total {
+      font-size: 10px;
+      position: relative;
+      display: flex;
+      padding: 0px;
+      margin: auto 0px;
+      position: relative;
+      left: 0;
+   }
+
+   .name {
+      display: flex;
+      font-size: 15px;
+   }
+   .bin {
+      width: 200px;
+   }
+}
+.comgate-container {
+   display: none;
+   position: absolute;
+   z-index: 9999;
+   left: 50%;
+   top: 30px;
+   overflow: auto;
+   margin-left: -250px;
+}
+.comgate-iframe {
+   width: 504px;
+   height: 679px;
+}
+@media (max-height: 700px) {
+   .comgate-iframe {
+      top: 0px;
+   }
+}

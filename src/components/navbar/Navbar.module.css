@@ -1,0 +1,253 @@
+.icons {
+   color: #f5f5f5;
+}
+.logo {
+   width: 100px;
+   transform: translate(50%, 0%);
+}
+.items {
+   background: linear-gradient(90deg, rgb(61, 243, 5) 0%, rgb(0, 38, 255) 100%);
+   height: 100px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display: flex;
+
+   background-color: black !important;
+   z-index: 1;
+   justify-content: center;
+   align-items: center;
+   font: 1, 2rem;
+}
+
+.navbarLogo {
+   color: #fff;
+   justify-self: start;
+   cursor: pointer;
+   bottom: 50px;
+}
+
+.Chicken {
+   font-size: 2.6rem;
+   position: relative;
+   left: 100px;
+   bottom: 35px;
+}
+
+.navMenu {
+   display: grid;
+   position: relative;
+   grid-template-columns: repeat(6, auto);
+   grid-gap: 8px;
+   list-style: none;
+   text-align: center;
+   width: 70vw;
+   justify-content: end;
+   margin-right: 2rem;
+   text-decoration: none;
+}
+
+.navLinks,
+.navLinks_mobiles {
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   color: white;
+}
+
+.navLinks:hover {
+   background-color: #1888ff;
+   border-radius: 4px;
+   transition: all 0.2s ease-out;
+}
+
+.navLinks_mobiles:hover {
+   background-color: #1888ff;
+   border-radius: 4px;
+   transition: all 0.2s ease-out;
+}
+
+.navLinks_mobiless:hover {
+   transform: scale(1.2);
+   border-radius: 4px;
+}
+
+.navLinks_mobile,
+.navLinks_mobiless,
+.menuIcon {
+   display: none;
+}
+
+.mnostvi {
+   position: relative;
+   text-align: center;
+   padding-left: 50px;
+}
+.kosik {
+   position: relative;
+   padding-left: 9px;
+   padding-right: 9px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+}
+.delka {
+   position: absolute;
+   background: red;
+   top: 11px;
+   right: 12px;
+   padding: 0 3px 0px 3px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 9px;
+   text-decoration: none;
+   color: white;
+   font-size: 12px;
+}
+
+.button {
+   background-color: rgb(103, 232, 234);
+   float: left;
+   padding: 8px 20px;
+   border-radius: 4px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+.button:hover {
+   padding: 8px 20px;
+   transition: all 0.3s ease-out;
+   background: #fff;
+   color: #65c7f4;
+   transition: 500ms;
+}
+
+@media screen and (max-width: 960px) {
+   .header {
+      margin: 0;
+      padding: 0;
+   }
+
+   .items {
+      height: 100px;
+      position: sticky;
+      z-index: 100;
+      font: 1, 2rem;
+   }
+   .navLinks_mobiless {
+      display: inline;
+      top: 65%;
+      left: 30%;
+   }
+   .navbarLogo {
+      text-decoration: none;
+   }
+   .kosik {
+      padding-top: -0px;
+      padding-left: 0px;
+      text-decoration: none;
+      position: relative;
+   }
+   .delka {
+      font-size: 10px;
+      top: 4px;
+      right: 7px;
+   }
+   .items {
+      position: fixed;
+   }
+   .Chicken {
+      font-size: 2.6rem;
+      position: relative;
+      bottom: 40px;
+      left: 100px;
+   }
+   .navMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 900px;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding-bottom: 300px;
+   }
+   .navMenu.active {
+      background: #242422;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+   }
+   .navLinks {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+   }
+   .navLinks:hover {
+      background-color: #1888ff;
+      border-radius: 0;
+   }
+   .navbarLogo {
+      position: relative;
+      margin: 0%;
+      font-size: 30px;
+      right: 200px;
+      bottom: 50px;
+      transform: translate(35%, 60%);
+   }
+   .menuIcon {
+      color: white;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 50%);
+      padding: 0;
+      margin: 0;
+      font-size: 1.8rem;
+      cursor: pointer;
+   }
+   .navLinks_mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #4ad9e4;
+      text-decoration: none;
+      font-size: 1.5rem;
+   }
+
+   .navLinks_mobile:hover {
+      background: #fff;
+      color: #6568f4;
+      transition: 250ms;
+   }
+   .header {
+      position: relative;
+      text-align: center;
+      bottom: 20px;
+   }
+   .navLinks_mobiles {
+      display: none;
+   }
+}
+@media screen and (max-width: 300px) {
+   .header {
+      position: relative;
+      text-align: center;
+      bottom: 20px;
+   }
+   .kosik {
+      padding-top: 0px;
+      padding-left: 0px;
+      bottom: 25px;
+      text-decoration: none;
+      position: relative;
+   }
+}
